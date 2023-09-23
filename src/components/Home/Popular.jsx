@@ -1,19 +1,20 @@
-import PYBlob from '@/assets/PYBlob.svg';
+import PYBlob from '@/assets/courses/python/intro/wJoin.svg';
 import JSBlob from '@/assets/JSBlob.svg';
 import HTMLBlob from '@/assets/HTMLBlob.svg';
 import ComingSoon from '@/assets/ComingSoon.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Card({ name, desc, blob }) {
 	return (
 		<div className="w-full rounded-xl bg-neutral-50 pb-2 drop-shadow-xl">
-			<div className="VHcenter relative flex">
+			<Link className="VHcenter relative flex" href="/courses/intro-python">
 				<Image
 					src={blob}
 					className="h-full w-full select-none rounded-2xl"
 					alt={name}
 				/>
-			</div>
+			</Link>
 			<div className="mx-auto h-full max-w-[95%] flex-col py-6 text-center">
 				<h1 className="text-4xl font-semibold">{name}</h1>
 				<p className="pt-2 text-lg font-normal">{desc}</p>
