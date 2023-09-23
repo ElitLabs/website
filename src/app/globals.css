@@ -9,9 +9,6 @@
 }
 
 @layer components {
-	.navbutton-bg {
-		@apply rounded-xl bg-gradient-to-tl from-violet-400 to-blue-400 p-2 px-5 drop-shadow-md;
-	}
 }
 
 @layer utilities {

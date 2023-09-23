@@ -87,7 +87,7 @@ export default function MobileNav() {
 						Contact
 					</MotionLink>
 					<button
-						className="navbutton-bg px-10 py-4 text-3xl font-bold transition duration-500 ease-in-out hover:scale-105"
+						className="rounded-xl bg-gradient-to-tl from-violet-400 to-blue-400 px-5 py-4 text-3xl font-bold drop-shadow-md transition duration-500 ease-in-out hover:scale-105"
 						onClick={() => toast.error('Coming Soon!')}>
 						Sign Up
 					</button>
