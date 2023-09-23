@@ -25,24 +25,32 @@ export default function Why() {
 						<Card
 							title="Skilled Teachers"
 							text="Our course is led by a team of highly skilled instructors who are not only experts in coding but also passionate about teaching. They bring a lot of experience to the table, ensuring that you receive the best education and guidance throughout your learning journey."
-							icon={<BsBraces className="why-icon" />}
+							icon={
+								<BsBraces className=" h-auto w-auto max-w-[2.75rem] rounded-full stroke-[0.75] p-2 text-[3rem] text-white" />
+							}
 						/>
 						<Card
 							title="Practice by Doing"
 							text="We believe in the power of learning through hands-on experience. Our courses place a strong emphasis on practical coding exercises and real-world projects. You'll have the opportunity to apply your knowledge immediately, honing your coding skills and problem-solving abilities."
-							icon={<FaLaptopCode className="why-icon" />}
+							icon={
+								<FaLaptopCode className=" h-auto w-auto max-w-[2.75rem] rounded-full stroke-[0.75] p-2 text-[3rem] text-white" />
+							}
 						/>
 					</div>
 					<div className="flex w-full flex-col gap-y-10 md:max-w-[45%] md:gap-y-20 md:pt-10">
 						<Card
 							title="Easy to Learn"
 							text="We understand that coding can seem daunting, especially for beginners. That's why our course is designed to make learning as straightforward as possible. Our coding materials, comprehensive notes, and instructional videos break down complex concepts into easy-to-understand modules, making it accessible and enjoyable for learners of all levels."
-							icon={<FaGraduationCap className="why-icon" />}
+							icon={
+								<FaGraduationCap className=" h-auto w-auto max-w-[2.75rem] rounded-full stroke-[0.75] p-2 text-[3rem] text-white" />
+							}
 						/>
 						<Card
 							title="Comprehensive Learning Resources"
 							text="Our course provides a rich array of learning resources tailored to coding enthusiasts. From detailed coding materials to comprehensive lecture notes and instructional videos, our resources cover every aspect of the subject matter. These materials are carefully crafted to cater to different learning styles, ensuring that you have the necessary tools at your disposal to excel in your coding endeavors."
-							icon={<PiBooksFill className="why-icon" />}
+							icon={
+								<PiBooksFill className=" h-auto w-auto max-w-[2.75rem] rounded-full stroke-[0.75] p-2 text-[3rem] text-white" />
+							}
 						/>
 					</div>
 				</div>

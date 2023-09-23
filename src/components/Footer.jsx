@@ -26,30 +26,18 @@ export default function Footer() {
 						Contact us
 					</h1>
 					<div className="flex flex-row gap-x-7">
-						<a
-							href="https://github.com/ElitLabs"
-							target="_blank"
-							rel="noopener noreferrer">
+						<Link href="https://github.com/ElitLabs">
 							<SiGithub color="#181717" size={24} />
-						</a>
-						<a
-							href="https://discord.gg/usjptSSpkr"
-							target="_blank"
-							rel="noopener noreferrer">
+						</Link>
+						<Link href="https://discord.gg/usjptSSpkr">
 							<SiDiscord color="#5865F2" size={24} />
-						</a>
-						<a
-							href="mailto:team.elitlabs@gmail.com"
-							target="_blank"
-							rel="noopener noreferrer">
+						</Link>
+						<Link href="mailto:team.elitlabs@gmail.com">
 							<SiGmail color="#EA4335" size={24} />
-						</a>
-						<a
-							href="https://instagram.com/elit_labs"
-							target="_blank"
-							rel="noopener noreferrer">
+						</Link>
+						<Link href="https://instagram.com/elit_labs">
 							<SiInstagram color="#E4405F" size={24} />
-						</a>
+						</Link>
 					</div>
 				</div>
 			</footer>

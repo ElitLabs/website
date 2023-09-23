@@ -28,7 +28,7 @@ export default function CallToAction() {
 					</span>
 					<Image
 						src={laptop}
-						alt="Laptop"
+						alt="Laptop Image"
 						className="w-[50%] xl:w-[75%] 2xl:w-[100%]"
 						width={1000}
 						height={1000}

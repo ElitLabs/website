@@ -13,8 +13,8 @@ export default function Navbar() {
 					ElitLabs
 				</Link>
 				<div className="flex items-center justify-center space-x-8 text-2xl font-semibold text-neutral-900">
-					<a href="#">About</a>
-					<a href="#">Contact</a>
+					<Link href="/about">About</Link>
+					<Link href="/contact">Contact</Link>
 					<button
 						className="navbutton-bg transition duration-500 ease-in-out hover:scale-105"
 						onClick={() => toast.error('Coming Soon!')}>

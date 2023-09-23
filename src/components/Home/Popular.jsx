@@ -8,7 +8,11 @@ function Card({ name, desc, blob }) {
 	return (
 		<div className="w-full rounded-xl bg-neutral-50 pb-2 drop-shadow-xl">
 			<div className="VHcenter relative flex">
-				<Image src={blob} className="h-full w-full select-none rounded-2xl" />
+				<Image
+					src={blob}
+					className="h-full w-full select-none rounded-2xl"
+					alt={name}
+				/>
 			</div>
 			<div className="mx-auto h-full max-w-[95%] flex-col py-6 text-center">
 				<h1 className="text-4xl font-semibold">{name}</h1>

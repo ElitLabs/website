@@ -34,7 +34,7 @@ export default function MobileNav() {
 			</div>
 			<nav className="fixed top-0 z-40 flex flex-col items-center justify-center bg-white bg-opacity-10 backdrop-blur-lg backdrop-filter md:hidden">
 				<ul className="flex flex-col items-center justify-center gap-y-6 text-3xl font-semibold text-neutral-900">
-					<a href="mailto:team@elitlabs.com">Contact Us</a>
+					<Link href="contact">Contact Us</Link>
 					<button
 						className="navbutton-bg px-10 py-4 text-3xl font-bold transition duration-500 ease-in-out hover:scale-105"
 						onClick={() => toast.error('Coming Soon!')}>
