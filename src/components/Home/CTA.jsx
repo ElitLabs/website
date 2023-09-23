@@ -29,7 +29,7 @@ export default function CallToAction() {
 					<Image
 						src={laptop}
 						alt="Laptop Image"
-						className="w-[50%] xl:w-[75%] 2xl:w-[100%]"
+						className="hidden xl:flex xl:w-[75%] 2xl:w-[100%]"
 						width={1000}
 						height={1000}
 					/>
