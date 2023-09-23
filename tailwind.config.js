@@ -1,18 +1,51 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
-}
+	content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
+	theme: {
+		extend: {
+			fontFamily: {
+				quicksand: ['Quicksand', 'sans-serif'],
+			},
+			colors: {
+				mainDarkBG: '#0d0d0e',
+				mainLightBG: '#f5f5f5',
+				brand: '#E7183F',
+			},
+			fontSize: {
+				'8.5xl': '7rem',
+			},
+			backgroundSize: {
+				'200%': '200%',
+				'500%': '500%',
+			},
+			screens: {
+				'2xl': '1440px',
+				'3xl': '1920px',
+				'4xl': '2560px',
+				'5xl': '3840px',
+				'6xl': '5120px',
+			},
+			animation: {
+				gradient: 'gradient 15s linear infinite',
+			},
+			keyframes: {
+				gradient: {
+					from: { 'background-position': '0%' },
+					to: { 'background-position': '400%' },
+				},
+			},
+			borderWidth: {
+				1: '1px',
+			},
+			backgroundImage: {
+				PYBlob: "url('./assets/PYBlob.svg')",
+				JSBlob: "url('./assets/JSBlob.svg')",
+				HTMLBlob: "url('./assets/HTMLBlob.svg')",
+			},
+			dropShadow: {
+				card: '0px 5px 6px rgba(0, 0, 0, 0.2)',
+			},
+		},
+	},
+	plugins: [],
+};
