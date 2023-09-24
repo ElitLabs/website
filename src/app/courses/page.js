@@ -1,3 +1,13 @@
+import ComingSoonPage from '@/components/ComingSoonPage';
+
+export const metadata = {
+	title: 'ElitLabs | Coming Soon',
+};
+
 export default function Courses() {
-	return <div>Courses</div>;
+	return (
+		<main>
+			<ComingSoonPage />
+		</main>
+	);
 }
