@@ -5,13 +5,13 @@ import ComingSoon from '@/assets/ComingSoon.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 
-function Card({ name, desc, blob, centered }) {
+function Card({ name, desc, blob, url = '/404', centered }) {
 	return (
 		<div
 			className={`w-full rounded-xl bg-neutral-50 pb-2 drop-shadow-xl mx-auto${
 				centered ? ' md:col-span-2 md:max-w-[calc(50%-1.25rem)]' : ''
 			}`}>
-			<Link className="relative flex" href="/courses/intro-python">
+			<Link className="relative flex" href={url}>
 				<Image
 					src={blob}
 					className="h-full w-full select-none rounded-2xl"
@@ -25,7 +25,6 @@ function Card({ name, desc, blob, centered }) {
 		</div>
 	);
 }
-
 export default function Popular() {
 	return (
 		<section className="mb-10 mt-20 h-full w-full">
@@ -40,6 +39,7 @@ export default function Popular() {
 					name="Intro to Python"
 					desc="Python course for complete beginners to programming, no coding experience required."
 					blob={PYBlob}
+					url="/courses/python/intro"
 				/>
 				<Card
 					name="Coming Soon"
