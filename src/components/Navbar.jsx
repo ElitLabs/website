@@ -16,7 +16,7 @@ export default function Navbar() {
 					<Link href="/about">About</Link>
 					<Link href="/contact">Contact</Link>
 					<button
-						className="rounded-xl bg-gradient-to-tl from-violet-400 to-blue-400 p-2 px-5 drop-shadow-md transition duration-500 ease-in-out hover:scale-105"
+						className="hover:animate-gradient bg-500% rounded-xl bg-gradient-to-l from-violet-400 via-blue-400 to-violet-400 p-2 px-5 text-neutral-950 drop-shadow-md transition duration-500 ease-in-out hover:scale-105"
 						onClick={() => toast.error('Coming Soon!')}>
 						Sign Up
 					</button>
