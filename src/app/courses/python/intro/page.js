@@ -17,7 +17,7 @@ export default function ITP() {
 						2h 14m
 					</span>
 					<span className="flex flex-row items-center justify-center gap-x-2">
-						<TbCodeCircle2 />3 Assignments
+						<TbCodeCircle2 /> 3 Assignments
 					</span>
 					<span className="flex flex-row items-center justify-center gap-x-2">
 						<TbBooks />
@@ -26,7 +26,7 @@ export default function ITP() {
 				</div>
 			</header>
 			<Image src={ITPImg} />
-			<button className="text-bold rounded-lg bg-[#306998] px-16 py-4 text-2xl text-[#FFD43B]">
+			<button className="text-bold rounded-lg bg-[#306998] px-16 py-4 text-2xl text-[#FFD43B] hover:bg-[#28557c]">
 				Enroll
 			</button>
 		</section>
