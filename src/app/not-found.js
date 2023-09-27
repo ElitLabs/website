@@ -12,7 +12,7 @@ export default function Err404() {
 					<h1 className="text-6xl font-bold">
 						<span className="bg-500% animate-gradient text-gradient bg-gradient-to-l from-violet-500 via-blue-500 to-violet-500 font-black">
 							404
-						</span>{' '}
+						</span>
 						Page Not Found
 					</h1>
 
