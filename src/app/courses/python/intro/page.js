@@ -16,12 +16,11 @@ export default function ITP() {
 			assignments={'3 Assignments'}
 			topics={'6 Topics'}
 			image={ITPImg}
-			button={
-				<button className="text-bold mt-4 max-w-[65%] rounded-lg bg-[#306998] px-16 py-4 text-2xl text-[#FFD43B] hover:bg-[#28557c]">
-					Enroll
-				</button>
-			}
-			video={'Video Placeholder'}
+			button={{
+				bgColor: '#306998',
+				bgHoverColor: '#28557c',
+				textColor: '#FFD43B',
+			}}
 		/>
 	);
 }
