@@ -8,8 +8,8 @@ export default function Err404() {
 	return (
 		<main>
 			<div className="flex h-[70vh] flex-col items-center justify-center py-2">
-				<main className="flex h-full flex-col items-center justify-center gap-y-4 px-20 text-center">
-					<h1 className="text-6xl font-bold">
+				<main className="flex h-full flex-col items-center justify-center gap-y-8 px-20 text-center">
+					<h1 className="flex flex-col gap-y-3 text-6xl font-bold">
 						<span className="bg-500% animate-gradient text-gradient bg-gradient-to-l from-violet-500 via-blue-500 to-violet-500 font-black">
 							404
 						</span>
