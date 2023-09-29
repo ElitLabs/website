@@ -20,13 +20,13 @@ export default function Overview({
 				<div className="flex flex-row justify-between gap-x-6">
 					<span className="flex flex-row items-center justify-center gap-x-2">
 						<HiOutlineVideoCamera />
-						2h 14m
+						{duration}
 					</span>
 					<span className="flex flex-row items-center justify-center gap-x-2">
-						<TbCodeCircle2 />3 Assignments
+						<TbCodeCircle2 />{assignments}
 					</span>
 					<span className="flex flex-row items-center justify-center gap-x-2">
-						<TbBooks />6 Topics
+						<TbBooks />{topics}
 					</span>
 				</div>
 				<Image src={image} className="drop-shadow-sm" />

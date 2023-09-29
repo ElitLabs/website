@@ -12,6 +12,9 @@ export default function ITP() {
 			description={
 				'Irure fugiat nulla ea deserunt elit quis culpa in nostrud culpa. Veniam ex enim reprehenderit amet sit adipisicing quis nisi pariatur et. Et est duis esse commodo tempor consequat sunt aliqua ex irure minim proident. Reprehenderit incididunt nulla nostrud laboris Lorem duis fugiat id quis elit ea labore eu tempor. Ad sit laborum ut anim irure consectetur eiusmod eiusmod ea consequat ex nulla.'
 			}
+			duration={'2h 14m'}
+			assignments={'3 Assignments'}
+			topics={'6 Topics'}
 			image={ITPImg}
 			button={
 				<button className="text-bold mt-4 max-w-[65%] rounded-lg bg-[#306998] px-16 py-4 text-2xl text-[#FFD43B] hover:bg-[#28557c]">
