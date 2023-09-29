@@ -21,21 +21,30 @@ function Card({
 			className={`w-full rounded-xl bg-neutral-50 pb-2 drop-shadow-xl mx-auto${
 				centered ? ' md:col-span-2 md:max-w-[calc(50%-1.25rem)]' : ''
 			}`}>
-			<Link
-				className="relative flex"
-				href={url}
-				onClick={() => {
-					comingSoonToast &&
-						toast.error(
-							'We are currently working on new courses, check back soon!',
-						);
-				}}>
-				<Image
-					src={blob}
-					className="h-full w-full select-none rounded-2xl"
-					alt={name}
-				/>
-			</Link>
+			{!comingSoonToast ? (
+				<Link className="relative flex" href={url}>
+					<Image
+						src={blob}
+						className="h-full w-full select-none rounded-2xl"
+						alt={name}
+					/>
+				</Link>
+			) : (
+				<div
+					className="relative flex cursor-pointer"
+					onClick={() => {
+						comingSoonToast &&
+							toast.error(
+								'We are currently working on new courses, check back soon!',
+							);
+					}}>
+					<Image
+						src={blob}
+						className="h-full w-full select-none rounded-2xl"
+						alt={name}
+					/>
+				</div>
+			)}
 			<div className="mx-auto max-w-[95%] flex-col py-6 text-center">
 				<h1 className="text-4xl font-semibold">{name}</h1>
 				<p className="pt-2 text-lg font-normal">{desc}</p>
