@@ -16,11 +16,7 @@ export default function ITP() {
 			assignments={'3 Assignments'}
 			topics={'6 Topics'}
 			image={ITPImg}
-			button={{
-				bgColor: '#306998',
-				bgHoverColor: '#28557c',
-				textColor: '#FFD43B',
-			}}
+			button={`bg-[#306998] text-[#FFD43B] hover:bg-[#28557c]`}
 		/>
 	);
 }
