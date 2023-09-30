@@ -17,28 +17,34 @@ export default function Overview({
 	button,
 	video,
 }) {
-	button += ' text-bold rounded-lg w-2/5 px-16 py-4 text-2xl';
+	button +=
+		' text-bold rounded-lg w-full xl:w-2/5 px-12 mb-8 lg:mb-0 py-4 text-3xl';
 	return (
-		<section className="3xl:max-w-[45%] mx-auto flex flex-col justify-center gap-y-10 py-4 lg:pt-10 xl:max-w-[75%]">
-			<div className="col-span-2 grid w-full grid-cols-[55%,40%] flex-col">
-				<div className="flex flex-col justify-between">
+		<section className="3xl:max-w-[45%] mx-auto flex max-w-[90%] flex-col justify-center gap-y-10 py-4 lg:pt-10 xl:max-w-[75%]">
+			<div className="col-span-2 w-full grid-cols-[55%,40%] flex-col xl:grid">
+				<div className="justify-between xl:grid xl:grid-rows-[65%,25%]">
 					<div className="flex h-full flex-col">
 						<h1 className="pb-2 text-4xl font-bold">{title}</h1>
-						<div className="flex flex-row text-xl lg:gap-x-6">
-							<span className="flex flex-row items-center justify-center gap-x-2">
+						<div className="mx-auto grid w-full grid-cols-2 text-xl lg:mx-0 lg:flex lg:flex-row lg:gap-x-6">
+							<span className="flex flex-row items-center gap-x-2 lg:justify-center">
 								<HiOutlineVideoCamera />
 								{duration}
 							</span>
-							<span className="flex flex-row items-center justify-center gap-x-2">
+							<span className="flex flex-row items-center gap-x-2 lg:justify-center">
 								<TbCodeCircle2 />
 								{assignments}
 							</span>
-							<span className="flex flex-row items-center justify-center gap-x-2">
+							<span className="flex flex-row items-center gap-x-2 lg:justify-center">
 								<TbBooks />
 								{topics}
 							</span>
 						</div>
-						<p className="pt-4 text-xl">
+						<Image
+							src={image}
+							alt={imageAlt}
+							className="mx-auto h-auto w-full pt-4 drop-shadow-sm lg:mx-0 lg:hidden lg:w-0 lg:pt-0"
+						/>
+						<p className="py-6 text-xl lg:py-4">
 							Laboris velit minim aliquip qui adipisicing dolor dolor.
 							Reprehenderit incididunt laboris amet quis ex reprehenderit
 							laboris nostrud ea labore consectetur aute commodo.
@@ -49,18 +55,18 @@ export default function Overview({
 				<Image
 					src={image}
 					alt={imageAlt}
-					className="h-auto w-full self-center justify-self-end drop-shadow-sm"
+					className="hidden h-auto w-full self-center justify-self-end drop-shadow-sm lg:inline"
 				/>
 			</div>
-			<div className="grid grid-cols-[55%,5%,35%]">
-				<div className="mx-auto flex  flex-col gap-y-2 lg:mx-0 ">
+			<div className="flex flex-col gap-y-10 lg:grid lg:grid-cols-[55%,5%,35%]">
+				<div className="mx-auto flex flex-col gap-y-2 lg:mx-0 ">
 					<h1 className="text-center text-3xl font-semibold lg:text-left 2xl:text-4xl">
 						About This Course
 					</h1>
 					<p className="text-xl">{description}</p>
 				</div>
 				<div className="col-start-3 flex w-full flex-col gap-y-2">
-					<h1 className="text-3xl font-semibold 2xl:text-4xl">
+					<h1 className="mx-auto text-3xl font-semibold lg:mx-0 2xl:text-4xl">
 						Skills Covered
 					</h1>
 					<div className="grid grid-cols-[10%,90%] justify-center gap-x-2 gap-y-2 text-xl font-semibold">
