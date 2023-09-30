@@ -9,7 +9,7 @@ export default function Navbar() {
 				<Link
 					href="/"
 					passHref
-					className="font-quicksand text-brand/90 flex items-center text-center text-4xl font-bold">
+					className="flex items-center text-center font-quicksand text-4xl font-bold text-brand/90">
 					ElitLabs
 				</Link>
 				<div className="flex items-center justify-center space-x-8 text-2xl font-semibold text-neutral-900">

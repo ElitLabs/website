@@ -56,7 +56,7 @@ export default function MobileNav() {
 		<>
 			<header className="sticky top-0 z-50 flex w-full flex-row items-center justify-between border-b-2 border-neutral-300/20 bg-white bg-opacity-10 px-[5%] py-[0.5rem] backdrop-blur-lg backdrop-filter md:hidden">
 				<Link
-					className="font-quicksand text-brand/90 text-[2.125rem] font-semibold"
+					className="font-quicksand text-[2.125rem] font-semibold text-brand/90"
 					href="/">
 					ElitLabs
 				</Link>
