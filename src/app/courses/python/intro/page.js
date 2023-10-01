@@ -9,6 +9,9 @@ export default function ITP() {
 	return (
 		<Overview
 			title={'Introduction to Python'}
+			shortDescription={
+				'Laboris velit minim aliquip qui adipisicing dolor dolor. Reprehenderit incididunt laboris amet quis ex reprehenderit laboris nostrud ea labore consectetur aute commodo.'
+			}
 			description={
 				'Irure fugiat nulla ea deserunt elit quis culpa in nostrud culpa. Veniam ex enim reprehenderit amet sit adipisicing quis nisi pariatur et. Et est duis esse commodo tempor consequat sunt aliqua ex irure minim proident. Reprehenderit incididunt nulla nostrud laboris Lorem duis fugiat id quis elit ea labore eu tempor. Ad sit laborum ut anim irure consectetur eiusmod eiusmod ea consequat ex nulla.'
 			}
@@ -16,6 +19,7 @@ export default function ITP() {
 			assignments={'3 Assignments'}
 			topics={'6 Topics'}
 			image={ITPImg}
+			imageAlt={'Introduction to Python'}
 			button={`bg-[#306998] text-[#FFD43B] hover:bg-[#28557c]`}
 		/>
 	);

@@ -8,6 +8,7 @@ import { PiBracketsCurlyBold } from 'react-icons/pi';
 
 export default function Overview({
 	title,
+	shortDescription,
 	description,
 	duration,
 	assignments,
@@ -15,10 +16,9 @@ export default function Overview({
 	image,
 	imageAlt,
 	button,
-	video,
 }) {
 	button +=
-		' text-bold rounded-lg w-full xl:w-2/5 px-12 mb-8 lg:mb-0 py-4 text-3xl';
+		' text-bold rounded-lg w-full xl:w-2/6 xl:h-[80%] mb-8 lg:mb-0 text-4xl';
 	return (
 		<section className="3xl:max-w-[45%] mx-auto flex max-w-[90%] flex-col justify-center gap-y-10 py-4 lg:pt-10 xl:max-w-[75%]">
 			<div className="col-span-2 w-full grid-cols-[55%,40%] flex-col xl:grid">
@@ -44,11 +44,7 @@ export default function Overview({
 							alt={imageAlt}
 							className="mx-auto h-auto w-full pt-4 drop-shadow-sm lg:mx-0 lg:hidden lg:w-0 lg:pt-0"
 						/>
-						<p className="py-6 text-xl lg:py-4">
-							Laboris velit minim aliquip qui adipisicing dolor dolor.
-							Reprehenderit incididunt laboris amet quis ex reprehenderit
-							laboris nostrud ea labore consectetur aute commodo.
-						</p>
+						<p className="py-6 text-xl lg:py-4">{shortDescription}</p>
 					</div>
 					<button className={button}>Enroll</button>
 				</div>
