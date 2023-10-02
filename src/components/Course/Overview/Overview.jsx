@@ -16,14 +16,14 @@ export default function Overview({
 	skills,
 }) {
 	button +=
-		' text-bold rounded-lg w-full xl:w-2/6 xl:h-[80%] mb-8 lg:mb-0 text-4xl';
+		' text-bold rounded-lg w-full w-2/5 mb-8 lg:mb-0 text-4xl row-start-3';
 	return (
-		<section className="3xl:max-w-[45%] mx-auto flex max-w-[90%] flex-col justify-center gap-y-10 py-4 lg:pt-10 xl:max-w-[75%]">
-			<div className="col-span-2 w-full grid-cols-[55%,40%] flex-col xl:grid">
-				<div className="justify-between xl:grid xl:grid-rows-[65%,25%]">
+		<section className="3xl:max-w-[55%] mx-auto flex max-w-[90%] flex-col justify-center gap-y-10 py-4 lg:pt-10 xl:max-w-[75%]">
+			<div className="col-span-2 w-full grid-cols-[55%,40%] flex-col gap-x-[4.75%] xl:grid">
+				<div className="justify-between xl:grid xl:grid-rows-[65%,10%,25%]">
 					<div className="flex h-full flex-col">
 						<h1 className="pb-2 text-4xl font-bold">{title}</h1>
-						<div className="mx-auto grid w-full grid-cols-2 text-xl lg:mx-0 lg:flex lg:flex-row lg:gap-x-6">
+						<div className="justify-auto mx-auto grid w-full grid-cols-2 text-xl lg:mx-0 lg:flex lg:flex-row lg:gap-x-6">
 							<span className="flex flex-row items-center gap-x-2 lg:justify-center">
 								<HiOutlineVideoCamera />
 								{duration}
@@ -52,15 +52,16 @@ export default function Overview({
 					className="hidden h-auto w-full self-center justify-self-end drop-shadow-sm lg:inline"
 				/>
 			</div>
-			<div className="flex flex-col gap-y-10 lg:grid lg:grid-cols-[55%,5%,35%]">
-				<div className="mx-auto flex flex-col gap-y-2 lg:mx-0 ">
+			{/* horizontal grid of skill level, reqreqs, time to complete, and price. Add icons, and add borders to seperate the parts of the grid */}
+			<div className="flex flex-col gap-x-[4.75%] gap-y-10 lg:grid lg:grid-cols-[55%,40%]">
+				<div className="mx-auto flex flex-col gap-y-2 lg:mx-0">
 					<h1 className="text-center text-3xl font-semibold lg:text-left 2xl:text-4xl">
 						About This Course
 					</h1>
 					<p className="text-xl">{description}</p>
 				</div>
-				<div className="col-start-3 flex w-full flex-col gap-y-2">
-					<h1 className="mx-auto text-3xl font-semibold lg:mx-0 2xl:text-4xl">
+				<div className="mx-auto flex w-full flex-col gap-y-2">
+					<h1 className="text-3xl font-semibold lg:mx-0 2xl:text-4xl">
 						Skills Covered
 					</h1>
 					<div className="grid grid-cols-[10%,90%] justify-center gap-x-2 gap-y-2 text-xl font-semibold">
