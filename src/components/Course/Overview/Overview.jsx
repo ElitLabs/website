@@ -16,6 +16,7 @@ export default function Overview({
 	image,
 	imageAlt,
 	button,
+	skills
 }) {
 	button +=
 		' text-bold rounded-lg w-full xl:w-2/6 xl:h-[80%] mb-8 lg:mb-0 text-4xl';
@@ -66,14 +67,7 @@ export default function Overview({
 						Skills Covered
 					</h1>
 					<div className="grid grid-cols-[10%,90%] justify-center gap-x-2 gap-y-2 text-xl font-semibold">
-						<VscSourceControl className="h-5/6 w-5/6 self-center justify-self-center stroke-[0.25] text-[#181717]" />
-						<p>Source Control Systems</p>
-						<PiBracketsCurlyBold className="h-5/6 w-5/6 self-center justify-self-center stroke-[0.5] font-black text-neutral-700" />
-						<p>Syntax and Datatypes</p>
-						<FaBrain className="h-5/6 w-5/6 self-center justify-self-center stroke-[0.25] text-slate-950" />
-						<p>Logic/Problem Solving</p>
-						<FaShapes className="h-5/6 w-5/6 self-center justify-self-center stroke-[0.25] text-neutral-800" />
-						<p>Object Oriented Programming</p>
+						{skills}
 					</div>
 				</div>
 			</div>

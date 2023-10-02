@@ -21,6 +21,18 @@ export default function ITP() {
 			image={ITPImg}
 			imageAlt={'Introduction to Python'}
 			button={`bg-[#306998] text-[#FFD43B] hover:bg-[#28557c]`}
+			skills={
+				<>
+					<VscSourceControl className="h-5/6 w-5/6 self-center justify-self-center stroke-[0.25] text-[#181717]" />
+					<p>Source Control Systems</p>
+					<PiBracketsCurlyBold className="h-5/6 w-5/6 self-center justify-self-center stroke-[0.5] font-black text-neutral-700" />
+					<p>Syntax and Datatypes</p>
+					<FaBrain className="h-5/6 w-5/6 self-center justify-self-center stroke-[0.25] text-slate-950" />
+					<p>Logic/Problem Solving</p>
+					<FaShapes className="h-5/6 w-5/6 self-center justify-self-center stroke-[0.25] text-neutral-800" />
+					<p>Object Oriented Programming</p>
+				</>
+			}
 		/>
 	);
 }
