@@ -86,8 +86,10 @@ export default class VideoControls extends React.Component {
   }
 
   handleSeek(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
     let leftOffset = evt.pageX - this.bar.current.offsetLeft;
-    this.setState({ sliderPos: leftOffset / this.bar.current.clientWidth * 100 }, () => {
+    this.setState({ sliderPos: leftOffset / this.bar.current.clientWidth * 100, dragging: true }, () => {
       this.props.onDragged(this.state.sliderPos / this.getMaxRightBound());
     });
   }
@@ -105,7 +107,7 @@ export default class VideoControls extends React.Component {
 	render() {
 		return (
       <section className="video-controls">
-        <div ref={this.bar} onClick={(evt) => this.handleSeek(evt)} className="progress-bar">
+        <div ref={this.bar} onMouseDown={(evt) => this.handleSeek(evt)} className="progress-bar">
           <div style={{ position: "relative"}}>
             <div style={{ position: "absolute", left: `${this.state.sliderPos}%` }} onMouseDown={(evt) => this.handleDragging(evt)}>
               <div ref={this.slider} className="video-controls-slider"></div>
