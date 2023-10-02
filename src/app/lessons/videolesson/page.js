@@ -23,8 +23,8 @@ export default class VideoLesson extends React.Component {
 		}
 	}
 
-  handleVideoProgress(percentage) {
-    this.controls.current.setPercentage(percentage);
+  handleVideoProgress(progress) {
+    this.controls.current.setProgress(progress);
   }
 
 	render() {
@@ -39,7 +39,7 @@ export default class VideoLesson extends React.Component {
                 className="react-player"
                 url="/videos/testVideoLesson.mp4"
                 controls={false}
-                onProgress={(progress) => this.handleVideoProgress(progress.played * 100)}
+                onProgress={(progress) => this.handleVideoProgress(progress)}
                 progressInterval={10}
                 playing={this.state.playing}
               />

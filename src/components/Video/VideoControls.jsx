@@ -35,9 +35,8 @@ export default class VideoControls extends React.Component {
   }
 
   handleMouseMove(evt) {
-    let leftOffset = evt.pageX - this.bar.current.offsetLeft;
-
     if (this.state.dragging) {
+      let leftOffset = evt.pageX - this.bar.current.offsetLeft;
       this.setState({
         sliderPos: leftOffset / this.bar.current.clientWidth * 100
       }, () => {
@@ -94,10 +93,12 @@ export default class VideoControls extends React.Component {
     });
   }
 
-  setPercentage(percentage) {
-    let adjustment = this.getMaxRightBound()/100;
-    percentage *= adjustment
-    this.setState({sliderPos: percentage});
+  setProgress(progress) {
+    let percentage = progress.played * this.getMaxRightBound()
+    let date = new Date(0);
+    date.setSeconds(progress.playedSeconds);
+    let timeString = date.toISOString().substring(14, 19);
+    this.setState({sliderPos: percentage, time: timeString});
   }
 
   getMaxRightBound() {
@@ -123,7 +124,7 @@ export default class VideoControls extends React.Component {
             }
           </button>
         </div>
-        <div className="video-time">0:00</div>
+        <div className="video-time">{this.state.time}</div>
         <div className="controls-inbetween"></div>
 			</section>
 		);
@@ -134,4 +135,5 @@ VideoControls.propTypes = {
   onVideoPlay: PropTypes.func.isRequired,
   onVideoPause: PropTypes.func.isRequired,
   onDragged: PropTypes.func.isRequired,
+  playedSeconds: PropTypes.number.isRequired,
 };
