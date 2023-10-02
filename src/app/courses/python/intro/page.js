@@ -1,5 +1,8 @@
 import Overview from '@/components/Course/Overview/Overview';
 import ITPImg from '@/assets/courses/python/intro/noJoin.svg';
+import { VscSourceControl } from 'react-icons/vsc';
+import { FaBrain, FaShapes } from 'react-icons/fa';
+import { PiBracketsCurlyBold } from 'react-icons/pi';
 
 export const metadata = {
 	title: 'ElitLabs | Introduction to Python',

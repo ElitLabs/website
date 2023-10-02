@@ -2,9 +2,6 @@ import Image from 'next/image';
 import { HiOutlineVideoCamera } from 'react-icons/hi';
 import { TbCodeCircle2, TbBooks } from 'react-icons/tb';
 import Timeline from './Timeline';
-import { VscSourceControl } from 'react-icons/vsc';
-import { FaBrain, FaShapes } from 'react-icons/fa';
-import { PiBracketsCurlyBold } from 'react-icons/pi';
 
 export default function Overview({
 	title,
@@ -16,7 +13,7 @@ export default function Overview({
 	image,
 	imageAlt,
 	button,
-	skills
+	skills,
 }) {
 	button +=
 		' text-bold rounded-lg w-full xl:w-2/6 xl:h-[80%] mb-8 lg:mb-0 text-4xl';
