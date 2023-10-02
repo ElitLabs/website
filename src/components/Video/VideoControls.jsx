@@ -2,6 +2,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FaPlay } from 'react-icons/fa';
+import { FaPause } from 'react-icons/fa';
 
 export default class VideoControls extends React.Component {
 	constructor(props) {
@@ -21,6 +23,11 @@ export default class VideoControls extends React.Component {
     document.body.addEventListener('mouseup', (evt) => this.handleMouseUp(evt));
   }
 
+  componentWillUnmount() {
+    document.body.removeEventListener('mousemove', (evt) => this.handleMouseMove(evt));
+    document.body.removeEventListener('mouseup', (evt) => this.handleMouseUp(evt));
+  }
+
   handleMouseUp(evt) {
     if (this.state.dragging) {
       this.handleDraggingStop(evt);
@@ -28,18 +35,15 @@ export default class VideoControls extends React.Component {
   }
 
   handleMouseMove(evt) {
-    var leftOffset = evt.pageX - this.bar.current.offsetLeft;
+    let leftOffset = evt.pageX - this.bar.current.offsetLeft;
 
     if (this.state.dragging) {
       this.setState({
         sliderPos: leftOffset / this.bar.current.clientWidth * 100
       }, () => {
-        let maxRightBound = 100 - this.slider.current.clientWidth / this.bar.current.clientWidth * 100;
-        console.log(maxRightBound)
-
-        if (this.state.sliderPos > maxRightBound) {
+        if (this.state.sliderPos > this.getMaxRightBound()) {
           this.setState({
-            sliderPos: maxRightBound
+            sliderPos: this.getMaxRightBound()
           });
         }
         if (this.state.sliderPos < 0) {
@@ -47,7 +51,7 @@ export default class VideoControls extends React.Component {
             sliderPos: 0
           });
         }
-        //this.props.onDraggedRight(this.state.sliderPos);
+        this.props.onDragged(this.state.sliderPos/this.getMaxRightBound());
       });
     }
 
@@ -69,22 +73,54 @@ export default class VideoControls extends React.Component {
     evt.preventDefault();
   }
 
-  componentWillUnmount() {
-    document.body.removeEventListener('mousemove', (evt) => this.handleMouseMove(evt));
-    document.body.removeEventListener('mouseup', (evt) => this.handleMouseUp(evt));
+  handlePlay() {
+    this.setState({playing: true}, () => {
+      this.props.onVideoPlay();
+    });
+  }
+
+  handlePause() {
+    this.setState({ playing: false }, () => {
+      this.props.onVideoPause();
+    });
+  }
+
+  handleSeek(evt) {
+    let leftOffset = evt.pageX - this.bar.current.offsetLeft;
+    this.setState({ sliderPos: leftOffset / this.bar.current.clientWidth * 100 }, () => {
+      this.props.onDragged(this.state.sliderPos / this.getMaxRightBound());
+    });
+  }
+
+  setPercentage(percentage) {
+    let adjustment = this.getMaxRightBound()/100;
+    percentage *= adjustment
+    this.setState({sliderPos: percentage});
+  }
+
+  getMaxRightBound() {
+    return 100 - this.slider.current.clientWidth / this.bar.current.clientWidth * 100;
   }
 
 	render() {
 		return (
       <section className="video-controls">
-        <div ref={this.bar} className="progress-bar">
+        <div ref={this.bar} onClick={(evt) => this.handleSeek(evt)} className="progress-bar">
           <div style={{ position: "relative"}}>
             <div style={{ position: "absolute", left: `${this.state.sliderPos}%` }} onMouseDown={(evt) => this.handleDragging(evt)}>
-              <div ref={this.slider} style={{ width: '7px', height: '14px', backgroundColor: 'gray' }}></div>
+              <div ref={this.slider} className="video-controls-slider"></div>
             </div>
           </div>
         </div>
-        <div className="play-button"></div>
+        <div className="play-button-wrapper">
+          <button>
+            {this.state.playing ?
+              <FaPause onClick={() => this.handlePause()} className="play-button" />
+              :
+              <FaPlay onClick={() => this.handlePlay()} className="play-button" />
+            }
+          </button>
+        </div>
         <div className="video-time">0:00</div>
         <div className="controls-inbetween"></div>
 			</section>
@@ -93,6 +129,7 @@ export default class VideoControls extends React.Component {
 }
 
 VideoControls.propTypes = {
-  total: PropTypes.number,
-  current: PropTypes.number
+  onVideoPlay: PropTypes.func.isRequired,
+  onVideoPause: PropTypes.func.isRequired,
+  onDragged: PropTypes.func.isRequired,
 };

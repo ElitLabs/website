@@ -7,9 +7,13 @@ import VideoControls from '@/components/Video/VideoControls.jsx';
 export default class VideoLesson extends React.Component {
 	constructor(props) {
 		super(props);
+    
+    this.player = React.createRef();
+    this.controls = React.createRef();
 
 		this.state = {
 			hasWindow: false,
+      playing: false,
 		};
 	}
 
@@ -19,8 +23,8 @@ export default class VideoLesson extends React.Component {
 		}
 	}
 
-  handleVideoProgress(seconds) {
-    console.log(seconds)
+  handleVideoProgress(percentage) {
+    this.controls.current.setPercentage(percentage);
   }
 
 	render() {
@@ -31,12 +35,26 @@ export default class VideoLesson extends React.Component {
 					{this.state.hasWindow && (
             <div className="react-player-wrapper">
               <ReactPlayer
+                ref={this.player}
                 className="react-player"
                 url="/videos/testVideoLesson.mp4"
                 controls={false}
-                onProgress={(progress) => this.handleVideoProgress(progress.playedSeconds)}
+                onProgress={(progress) => this.handleVideoProgress(progress.played * 100)}
+                progressInterval={10}
+                playing={this.state.playing}
               />
-              <VideoControls></VideoControls>
+              <VideoControls
+                ref={this.controls}
+                onVideoPlay={() => {
+                  this.setState({ playing: true });
+                }}
+                onVideoPause={() => {
+                  this.setState({ playing: false });
+                }}
+                onDragged={(percentage) => {
+                  this.player.current.seekTo(percentage, "fraction");
+                }}
+              />
             </div>
 					)}
 					<div className="video-questions">questions</div>

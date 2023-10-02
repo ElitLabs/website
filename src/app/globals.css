@@ -89,15 +89,21 @@ video {
   border-bottom-right-radius: 10px;
   background-color: lightgray;
   grid-area: 1 / 1 / 2 / 6;
+  cursor: pointer;
 }
 
-.play-button {
+.play-button-wrapper {
   grid-area: 2 / 1 / 3 / 2;
-  background-color: gray;
 }
 
 .progress-time {
   grid-area: 2 / 5 / 3 / 6;
+}
+
+.video-controls-slider {
+  width: 7px;
+  height: 14px;
+  background-color: gray;
 }
 
 .controls-inbetween {
