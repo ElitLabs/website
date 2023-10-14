@@ -6,7 +6,7 @@ export default function Terms() {
 	return (
 		<div className="mx-auto px-[6%] py-8">
 			<h1 className="text-4xl font-bold">Terms and Conditions for ElitLabs</h1>
-			<p className="mb-4">Last Updated: 10/13/2023</p>
+			<p className="mb-4">Last Updated: 10/14/2023</p>
 			<p className="mb-4 text-xl">
 				Welcome to ElitLabs! These terms and conditions govern your use of our
 				online on-demand course platform. By using ElitLabs, you agree to comply
@@ -108,16 +108,6 @@ export default function Terms() {
 			<p className="text-[1.25rem]">
 				These terms and conditions are governed by and construed in accordance
 				with the laws of California.
-			</p>
-
-			<h2 className="mt-6 text-3xl font-semibold">
-				11. Nonprofit Status and 501(c)(3) Designation
-			</h2>
-			<p className="text-[1.25rem]">
-				ElitLabs operates as a nonprofit organization through fiscal sponsorship
-				provided by Hack Club Bank. Our Tax Identification Number (TIN) is
-				81-2908499, and we are recognized as a 501(c)(3) nonprofit under the
-				Internal Revenue Code.
 			</p>
 
 			<h2 className="mt-6 text-3xl font-semibold">11. Contact Information</h2>
