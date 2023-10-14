@@ -93,11 +93,11 @@ export default function Terms() {
 				9. Disclaimers and Limitations of Liability
 			</h2>
 			<p className="text-[1.25rem]">
-				ElitLabs is provided "as is," and we make no guarantees regarding course
-				content, quality, or accuracy. We are not responsible for any errors,
-				interruptions, or technical issues on our platform. To the extent
-				permitted by law, we disclaim all warranties and shall not be liable for
-				any damages or losses.
+				ElitLabs is provided &quot;as is,&quot; and we make no guarantees
+				regarding course content, quality, or accuracy. We are not responsible
+				for any errors, interruptions, or technical issues on our platform. To
+				the extent permitted by law, we disclaim all warranties and shall not be
+				liable for any damages or losses.
 			</p>
 
 			<h2 className="mt-6 text-3xl font-semibold">10. Governing Law</h2>
