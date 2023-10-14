@@ -1,3 +1,7 @@
+export const metadata = {
+	title: 'ElitLabs | Terms and Conditions',
+};
+
 export default function Terms() {
 	return (
 		<div className="mx-auto px-[6%] py-8">
