@@ -149,8 +149,8 @@ export default function Privacy() {
 			</p>
 			<p className="text-[1.25rem]">
 				We may update this Privacy Policy at any time. When we do, we will
-				revise the "Effective Date" at the top of this document. Please review
-				this policy periodically.
+				revise the &quot;Effective Date&quot; at the top of this document.
+				Please review this policy periodically.
 			</p>
 
 			<p className="mt-6 text-3xl font-semibold">7. Contact Us</p>
