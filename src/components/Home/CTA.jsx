@@ -13,13 +13,13 @@ export default function CallToAction() {
 						Code
 					</span>
 				</span>
-				<span className="pb-3 text-xl font-semibold text-neutral-500">
+				<span className="3xl:pb-5 pb-3 text-xl font-semibold text-neutral-500">
 					We are a small group of passionate developers with the mission of
 					teaching people in ways that are intuitive, realistic, and fun.
 				</span>
 				<button
 					onClick={() => toast.error('Coming Soon!')}
-					className="bg-500% hover:animate-gradient mx-auto w-[75%] rounded-xl bg-gradient-to-r from-violet-500 via-blue-500 to-violet-500 p-4 text-3xl font-semibold text-neutral-50 transition duration-500 ease-in-out hover:scale-105 sm:mx-0 lg:w-[55%]">
+					className="bg-500% hover:animate-gradient 3xl:w-[35%] mx-auto w-[75%] rounded-xl bg-gradient-to-r from-violet-500 via-blue-500 to-violet-500 p-4 text-3xl font-semibold text-neutral-50 transition duration-500 ease-in-out hover:scale-105 sm:mx-0 lg:w-[55%]">
 					Join Now!
 				</button>
 			</span>
