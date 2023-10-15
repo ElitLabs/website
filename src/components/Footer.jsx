@@ -29,7 +29,7 @@ export default function Footer() {
 						<Link href="https://github.com/ElitLabs">
 							<SiGithub color="#181717" size={24} />
 						</Link>
-						<Link href="https://discord.gg/usjptSSpkr">
+						<Link href="https://discord.gg/T4ngq47kVD">
 							<SiDiscord color="#5865F2" size={24} />
 						</Link>
 						<Link href="mailto:team.elitlabs@gmail.com">
