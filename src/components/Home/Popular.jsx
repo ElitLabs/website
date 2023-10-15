@@ -66,7 +66,7 @@ export default function Popular() {
 					comingSoonToast
 				/>
 				<Card
-					name="Intro to Python"
+					name="Python"
 					desc="This course is coming soon, stay tuned!"
 					blob={ComingSoon}
 					// url="/courses/python/intro"

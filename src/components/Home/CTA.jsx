@@ -15,7 +15,7 @@ export default function CallToAction() {
 				</span>
 				<span className="pb-8 text-xl font-semibold text-neutral-500">
 					We are a small group of passionate developers with the mission of
-					teaching people. In ways that are intuitive, realistic, and fun.
+					teaching people in ways that are intuitive, realistic, and fun.
 				</span>
 				<button
 					onClick={() => toast.error('Coming Soon!')}
