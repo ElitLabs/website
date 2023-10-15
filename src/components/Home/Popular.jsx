@@ -56,23 +56,24 @@ export default function Popular() {
 	return (
 		<section className="mb-10 h-full w-full pt-24" id="popular">
 			<h1 className="4xl:text-6xl text-center text-[2.5rem] font-bold 2xl:text-5xl">
-				Popular Courses
+				On-Demand Courses
 			</h1>
 			<div className="3xl:gap-x-16 mx-auto flex w-full max-w-[90%] flex-col gap-y-10 pt-10 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-10 xl:flex xl:flex-row 2xl:gap-x-14">
 				<Card
-					name="Coming Soon"
+					name="Java"
 					desc="This course is coming soon, stay tuned!"
 					blob={ComingSoon}
 					comingSoonToast
 				/>
 				<Card
 					name="Intro to Python"
-					desc="Python course for complete beginners to programming, no coding experience required."
-					blob={PYBlob}
-					url="/courses/python/intro"
+					desc="This course is coming soon, stay tuned!"
+					blob={ComingSoon}
+					// url="/courses/python/intro"
+					comingSoonToast
 				/>
 				<Card
-					name="Coming Soon"
+					name="Web Development"
 					desc="This course is coming soon, stay tuned!"
 					blob={ComingSoon}
 					centered
