@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import MobileNav from '@/components/MobileNav';
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
 	title: 'ElitLabs',
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
 				<MobileNav />
 				<main className="mb-auto">{children}</main>
 				<Footer />
+				<Analytics />
 			</body>
 		</html>
 	);
