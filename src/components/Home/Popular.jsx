@@ -54,7 +54,7 @@ function Card({
 }
 export default function Popular() {
 	return (
-		<section className="mb-10 h-full w-full pt-24" id="popular">
+		<section className="mb-10 h-full w-full pt-24 lg:pt-12" id="popular">
 			<h1 className="4xl:text-6xl text-center text-[2.5rem] font-bold 2xl:text-5xl">
 				On-Demand Courses
 			</h1>
