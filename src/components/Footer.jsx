@@ -14,10 +14,10 @@ export default function Footer() {
 					<div className="mb-4 mt-6 flex flex-col gap-x-10 gap-y-4 text-xl font-medium text-neutral-800">
 						<h1 className="text-3xl font-semibold md:hidden">Pages</h1>
 						<div className="flex flex-col gap-x-5 md:grid md:grid-cols-2 md:grid-rows-2 lg:flex lg:flex-row">
-							<Link href="terms">Terms</Link>
-							<Link href="privacy">Privacy</Link>
-							<Link href="contact">Contact</Link>
-							<Link href="about">About</Link>
+							<Link href="/terms">Terms</Link>
+							<Link href="/privacy">Privacy</Link>
+							<Link href="/contact">Contact</Link>
+							<Link href="/about">About</Link>
 						</div>
 					</div>
 				</div>
