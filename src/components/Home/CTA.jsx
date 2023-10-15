@@ -13,7 +13,7 @@ export default function CallToAction() {
 						Code
 					</span>
 				</span>
-				<span className="pb-8 text-xl font-semibold text-neutral-500">
+				<span className="pb-3 text-xl font-semibold text-neutral-500">
 					We are a small group of passionate developers with the mission of
 					teaching people in ways that are intuitive, realistic, and fun.
 				</span>
