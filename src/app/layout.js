@@ -4,6 +4,8 @@ import Navbar from '@/components/Navbar';
 import MobileNav from '@/components/MobileNav';
 import { Toaster } from 'react-hot-toast';
 import { Analytics } from '@vercel/analytics/react';
+import { Providers } from './providers';
+import ThemeButton from '@/components/ThemeButton';
 
 export const metadata = {
 	title: 'ElitLabs',
@@ -12,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<head>
 				<meta name="description" content={metadata.description} />
 				<link
@@ -34,13 +36,15 @@ export default function RootLayout({ children }) {
 				/>
 				<link rel="manifest" href="/site.webmanifest" />
 			</head>
-			<body className="flex h-screen min-w-full max-w-full flex-col overflow-x-hidden bg-neutral-50 2xl:max-w-[90%]">
-				<Toaster />
-				<Navbar />
-				<MobileNav />
-				<main className="mb-auto">{children}</main>
-				<Footer />
-				<Analytics />
+			<body className="flex h-screen min-w-full max-w-full flex-col overflow-x-hidden bg-neutral-50 dark:bg-neutral-900 2xl:max-w-[90%]">
+				<Providers>
+					<Toaster />
+					<Navbar />
+					<MobileNav />
+					<main className="mb-auto">{children}</main>
+					<Footer />
+					<Analytics />
+				</Providers>
 			</body>
 		</html>
 	);

@@ -9,7 +9,7 @@ export default function CallToAction() {
 			<span className="flex flex-col 2xl:max-w-[80%]">
 				<span className="3xl:text-[3.75rem] pb-6 text-[3.35rem] font-bold leading-[4.5rem]">
 					Rethinking the Way People Learn to{' '}
-					<span className="text-gradient animate-gradient bg-200% bg-gradient-to-r from-pink-600 via-purple-600 to-pink-600 font-black">
+					<span className="text-gradient animate-gradient bg-350% bg-gradient-to-r from-pink-600 via-purple-600 to-pink-600 font-black dark:from-pink-500 dark:via-purple-500 dark:to-pink-500">
 						Code
 					</span>
 				</span>

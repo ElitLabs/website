@@ -4,7 +4,7 @@ import { FaGraduationCap, FaLaptopCode } from 'react-icons/fa';
 
 function Card({ title, text, icon }) {
 	return (
-		<div className="border-brand 4xl:pb-12 flex h-auto flex-col items-center rounded-2xl border-t-4 bg-neutral-50 p-2 pb-10 drop-shadow-[3px_2px_10px_rgba(232,46,81,0.15)] 2xl:pb-8">
+		<div className="border-brand 4xl:pb-12 flex h-auto flex-col items-center rounded-2xl border-t-4 bg-neutral-50 p-2 pb-10 drop-shadow-[7.5px_5px_10px_rgba(232,46,81,0.15)] dark:bg-neutral-900 dark:drop-shadow-[7.5px_5px_15px_rgba(232,46,81,0.35)] 2xl:pb-8">
 			<div className="flex max-w-[85%] flex-col gap-y-4 pt-8">
 				<span className="bg-brand flex w-max rounded-full">{icon}</span>
 				<h3 className="4xl:text-4xl text-3xl font-bold">{title}</h3>

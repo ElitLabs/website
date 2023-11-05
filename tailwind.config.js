@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
+	darkMode: 'class',
 	theme: {
 		extend: {
 			fontFamily: {
@@ -16,6 +17,7 @@ module.exports = {
 			},
 			backgroundSize: {
 				'200%': '200%',
+				'350%': '350%',
 				'500%': '500%',
 			},
 			screens: {
