@@ -18,7 +18,7 @@ function Card({
 }) {
 	return (
 		<div
-			className={`w-full rounded-xl bg-neutral-50 pb-2 drop-shadow-xl dark:bg-neutral-900 dark:drop-shadow-[2.5px_7.5px_5px_rgba(155,155,155,0.05)] mx-auto${
+			className={`w-full rounded-xl bg-neutral-50 pb-2 drop-shadow-xl dark:bg-neutral-900 dark:drop-shadow-[2.5px_7.5px_5px_rgba(155,155,155,0.15)] mx-auto${
 				centered ? ' md:col-span-2 md:max-w-[calc(50%-1.25rem)]' : ''
 			}`}>
 			{!comingSoonToast ? (
