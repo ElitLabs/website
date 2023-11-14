@@ -82,16 +82,29 @@ export default function MobileNav() {
 						About
 					</MotionLink>
 					<MotionLink
-						href="/contact"
+						href="/about#contact"
 						variants={linkVariants}
 						onClick={() => toggleNav()}>
 						Contact
 					</MotionLink>
-					<button
+					{/* <MotionLink
+						href="/courses"
+						variants={linkVariants}
+						onClick={() => toggleNav()}>
+						Courses
+					</MotionLink> */}
+					{/* Add when we make tutoring page */}
+					{/* <MotionLink
+						href="/tutoring"
+						variants={linkVariants}
+						onClick={() => toggleNav()}>
+						Tutoring
+					</MotionLink> */}
+					{/* <button
 						className="rounded-xl bg-gradient-to-tl from-violet-400 to-blue-400 px-6 py-4 drop-shadow-md transition duration-500 ease-in-out hover:scale-105"
 						onClick={() => toast.error('Coming Soon!')}>
 						Sign Up
-					</button>
+					</button> */}
 				</motion.ul>
 			</motion.nav>
 		</>

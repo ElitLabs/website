@@ -1,4 +1,10 @@
-import { SiGithub, SiDiscord, SiGmail, SiInstagram } from 'react-icons/si';
+import {
+	SiGithub,
+	SiDiscord,
+	SiGmail,
+	SiInstagram,
+	SiTwitter,
+} from 'react-icons/si';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -14,8 +20,12 @@ export default function Footer() {
 						<div className="flex flex-col gap-x-5 md:grid md:grid-cols-2 md:grid-rows-2 lg:flex lg:flex-row">
 							<Link href="/terms">Terms</Link>
 							<Link href="/privacy">Privacy</Link>
-							<Link href="/contact">Contact</Link>
+							{/* Add when we make Courses page */}
+							{/* <Link href="/courses">Courses</Link> */}
+							{/* Add when we make tutoring page */}
+							{/* <Link href="/tutoring">Tutoring</Link> */}
 							<Link href="/about">About</Link>
+							<Link href="/about#contact">Contact</Link>
 						</div>
 					</div>
 				</div>
@@ -28,11 +38,8 @@ export default function Footer() {
 						<Link href="https://discord.gg/T4ngq47kVD">
 							<SiDiscord color="#5865F2" size={24} />
 						</Link>
-						<Link href="mailto:team.elitlabs@gmail.com">
+						<Link href="mailto:team@elitlabs.com">
 							<SiGmail color="#EA4335" size={24} />
-						</Link>
-						<Link href="https://instagram.com/elit_labs">
-							<SiInstagram color="#E4405F" size={24} />
 						</Link>
 					</div>
 				</div>

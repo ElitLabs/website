@@ -10,7 +10,7 @@ export default function Navbar() {
 				<Link
 					href="/"
 					passHref
-					className="font-quicksand text-brand/90 flex items-center text-center text-4xl font-bold">
+					className="flex items-center text-center font-quicksand text-4xl font-bold text-brand/90">
 					ElitLabs
 				</Link>
 				<div className="flex items-center justify-center space-x-8 text-2xl font-semibold">
@@ -22,14 +22,28 @@ export default function Navbar() {
 					</Link>
 					<Link
 						className="transition-all duration-300 hover:text-neutral-700 hover:dark:text-neutral-200"
-						href="/contact">
+						href="/about#contact">
 						Contact
 					</Link>
-					<button
+
+					{/* <Link
+						className="transition-all duration-300 hover:text-neutral-700 hover:dark:text-neutral-200"
+						href="/courses">
+						Courses
+					</Link> */}
+					{/* Add when we make tutoring page */}
+					{/* <Link
+						className="transition-all duration-300 hover:text-neutral-700 hover:dark:text-neutral-200"
+						href="/tutoring">
+						Tutoring
+					</Link> */}
+
+					{/* Replace with clerk */}
+					{/* <button
 						className="rounded-xl bg-gradient-to-tl from-violet-400 to-blue-400 p-2 px-5 text-neutral-800 drop-shadow-md transition duration-500 ease-in-out hover:scale-105 hover:text-neutral-700 dark:from-violet-500 dark:to-blue-500 dark:text-neutral-200 hover:dark:text-neutral-300"
 						onClick={() => toast.error('Coming Soon!')}>
 						Sign Up
-					</button>
+					</button> */}
 				</div>
 			</div>
 		</nav>
