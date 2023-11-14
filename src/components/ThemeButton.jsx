@@ -12,8 +12,8 @@ export default function ThemeButton() {
 					theme === 'system'
 						? systemTheme === 'dark'
 						: theme === 'dark'
-						? 'light'
-						: 'dark',
+						  ? 'light'
+						  : 'dark',
 				);
 			}}
 			className="transition-all duration-300 hover:text-neutral-700 hover:dark:text-neutral-200 md:text-4xl">
