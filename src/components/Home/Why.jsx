@@ -24,14 +24,14 @@ export default function Why() {
 					<div className="flex flex-col gap-y-10 md:max-w-[45%] md:gap-y-20">
 						<Card
 							title="Skilled Teachers"
-							text="Our course is led by a team of highly skilled instructors who are not only experts in coding but also passionate about teaching. They bring a lot of experience to the table, ensuring that you receive the best education and guidance throughout your learning journey."
+							text="Our courses are led by a team of highly skilled instructors who are not only experts in coding but also passionate about teaching. They bring a lot of experience to the table, ensuring that you receive the best education and guidance throughout your learning journey."
 							icon={
 								<BsBraces className="h-auto w-auto max-w-[2.75rem] rounded-full stroke-[0.75] p-2 text-[3rem] text-white 2xl:max-w-[3.5rem] 4xl:max-w-[5rem]" />
 							}
 						/>
 						<Card
 							title="Comprehensive Learning Resources"
-							text="Our course provides a rich array of learning resources tailored to coding enthusiasts. From detailed coding materials to comprehensive lecture notes and instructional videos, our resources cover every aspect of the subject matter. These materials are carefully crafted to cater to different learning styles, ensuring that you have the necessary tools at your disposal to excel in your coding endeavors."
+							text="Our courses provide a diverse range of learning materials for aspiring programmers. With our on-demand courses, you'll have access to detailed videos, quizzes, and projects to help you have real world programming experience. Our resources are designed to accommodate different learning styles, ensuring you have the essential tools to excel in your coding studies."
 							icon={
 								<PiBooksFill className="h-auto w-auto max-w-[2.75rem] rounded-full stroke-[0.75] p-2 text-[3rem] text-white 2xl:max-w-[3.5rem] 4xl:max-w-[5rem]" />
 							}
