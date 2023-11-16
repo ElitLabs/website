@@ -40,7 +40,7 @@ export default function Why() {
 					<div className="flex flex-col gap-y-10 md:max-w-[45%] md:gap-y-20 md:pt-10">
 						<Card
 							title="Easy to Learn"
-							text="We understand that coding can seem daunting, especially for beginners. That's why our course is designed to make learning as straightforward as possible. Our coding materials, comprehensive notes, and instructional videos break down complex concepts into easy-to-understand modules, making it accessible and enjoyable for learners of all levels."
+							text="We understand that coding can seem difficult, especially for beginners. That's why our courses are designed to make learning as straightforward as possible. Our coding materials, comprehensive notes, and instructional videos break down complex concepts into easy-to-understand modules, making it accessible and enjoyable for learners of all levels."
 							icon={
 								<FaGraduationCap className="h-auto w-auto max-w-[2.75rem] rounded-full stroke-[0.75] p-2 text-[3rem] text-white 2xl:max-w-[3.5rem] 4xl:max-w-[5rem]" />
 							}
