@@ -39,13 +39,13 @@ export default function Footer() {
 				<div className="sm:VHcenter flex flex-col">
 					<h1 className="my-3 text-2xl font-semibold">Contact us</h1>
 					<div className="flex flex-row gap-x-7">
-						<Link href="https://github.com/ElitLabs">
+						<Link aria-label="github" href="https://github.com/ElitLabs">
 							<SiGithub className="text-[#181717] dark:text-white" size={24} />
 						</Link>
-						<Link href="https://discord.gg/T4ngq47kVD">
+						<Link aria-label="discord" href="https://discord.gg/T4ngq47kVD">
 							<SiDiscord color="#5865F2" size={24} />
 						</Link>
-						<Link href="mailto:team@elitlabs.com">
+						<Link aria-label="email" href="mailto:team@elitlabs.com">
 							<SiGmail color="#EA4335" size={24} />
 						</Link>
 					</div>
