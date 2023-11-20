@@ -7,7 +7,7 @@ function Card({ title, text, icon }) {
 		<div className="flex h-auto flex-col items-center rounded-2xl border-t-4 border-brand bg-neutral-50 p-2 pb-10 drop-shadow-[7.5px_5px_10px_rgba(232,46,81,0.15)] dark:bg-neutral-950 dark:drop-shadow-[7.5px_5px_15px_rgba(232,46,81,0.35)] 2xl:pb-8 4xl:pb-12">
 			<div className="flex max-w-[85%] flex-col gap-y-4 pt-8">
 				<span className="flex w-max rounded-full bg-brand">{icon}</span>
-				<h3 className="text-3xl font-bold 4xl:text-4xl">{title}</h3>
+				<h1 className="text-3xl font-bold 4xl:text-4xl">{title}</h1>
 				<p className="xl:text-xl 4xl:text-2xl">{text}</p>
 			</div>
 		</div>
