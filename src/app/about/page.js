@@ -27,8 +27,7 @@ export default function About() {
 						realized that we can learn better by
 						<span className="inline font-bold"> doing</span>. That&apos;s why
 						we&apos;re creating a platform for developers to learn by working
-						through projects. We hope to help aspiring developers from all
-						backgrounds learn to code.
+						through projects.
 					</p>
 				</div>
 			</div>
