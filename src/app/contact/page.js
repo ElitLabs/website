@@ -12,7 +12,7 @@ export default function Contact() {
 			</h1>
 
 			<div className="flex max-w-[90%] grid-cols-2 flex-col gap-x-16 gap-y-10 lg:grid lg:max-w-[75%] 3xl:grid-cols-3 ">
-				<div className="grid justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-tr from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 3xl:bg-gradient-to-bl">
+				<div className="grid grid-cols-1 justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-tr from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 3xl:bg-gradient-to-bl">
 					<h1 className="text-center text-3xl font-semibold">
 						Want to stay up to date with ElitLabs?
 					</h1>
