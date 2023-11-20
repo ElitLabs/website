@@ -74,7 +74,7 @@ export default function MobileNav() {
 				initial={false}
 				variants={menuVariants}
 				animate={isOpen ? 'opened' : 'closed'}>
-				<motion.ul className="flex flex-col items-center justify-center gap-y-6 text-3xl font-semibold">
+				<motion.div className="flex flex-col items-center justify-center gap-y-6 text-3xl font-semibold">
 					<MotionLink
 						href="/about"
 						variants={linkVariants}
@@ -105,7 +105,7 @@ export default function MobileNav() {
 						onClick={() => toast.error('Coming Soon!')}>
 						Sign Up
 					</button> */}
-				</motion.ul>
+				</motion.div>
 			</motion.nav>
 		</>
 	);
