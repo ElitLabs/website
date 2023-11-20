@@ -4,7 +4,7 @@ import { FaGraduationCap, FaLaptopCode } from 'react-icons/fa';
 
 function Card({ title, text, icon }) {
 	return (
-		<div className="flex h-auto flex-col items-center rounded-2xl border-t-4 border-brand bg-neutral-50 p-2 pb-10 drop-shadow-[7.5px_5px_10px_rgba(232,46,81,0.15)] dark:bg-neutral-900 dark:drop-shadow-[7.5px_5px_15px_rgba(232,46,81,0.35)] 2xl:pb-8 4xl:pb-12">
+		<div className="flex h-auto flex-col items-center rounded-2xl border-t-4 border-brand bg-neutral-50 p-2 pb-10 drop-shadow-[7.5px_5px_10px_rgba(232,46,81,0.15)] dark:bg-neutral-950 dark:drop-shadow-[7.5px_5px_15px_rgba(232,46,81,0.35)] 2xl:pb-8 4xl:pb-12">
 			<div className="flex max-w-[85%] flex-col gap-y-4 pt-8">
 				<span className="flex w-max rounded-full bg-brand">{icon}</span>
 				<h3 className="text-3xl font-bold 4xl:text-4xl">{title}</h3>
@@ -15,12 +15,12 @@ function Card({ title, text, icon }) {
 }
 export default function Why() {
 	return (
-		<section className="flex h-max flex-col gap-y-11 py-10 pb-12 xl:max-w-[80%]">
+		<section className="flex h-max flex-col gap-y-11 py-10 pb-12 xl:w-[105%] 3xl:w-full">
 			<h1 className="VHcenter flex text-center text-[2.5rem] font-bold leading-[1] 2xl:text-5xl 4xl:text-6xl">
 				Why choose our courses?
 			</h1>
 			<section className="VHcenter flex flex-row gap-x-16">
-				<div className="flex max-w-[80%] flex-col justify-between gap-x-16 gap-y-10 md:max-w-[75%] md:flex-row xl:max-w-[85%] 4xl:max-w-[100%]">
+				<div className="flex w-full flex-col justify-between gap-x-16 gap-y-10 lg:max-w-[75%] md:flex-row xl:max-w-full">
 					<div className="flex flex-col gap-y-10 md:max-w-[45%] md:gap-y-20">
 						<Card
 							title="Skilled Teachers"

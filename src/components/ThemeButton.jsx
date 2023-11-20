@@ -16,7 +16,7 @@ export default function ThemeButton() {
 						  : 'dark',
 				);
 			}}
-			className="transition-all duration-300 hover:text-neutral-700 hover:dark:text-neutral-200 md:text-4xl">
+			className="transition-all duration-300 hover:text-neutral-800 hover:dark:text-neutral-200 md:text-4xl">
 			<BsSunFill className="hidden text-[1.75rem] dark:flex" />
 			<BsMoonFill className="text-[1.75rem] dark:hidden" />
 		</button>
