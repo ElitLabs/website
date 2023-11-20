@@ -6,6 +6,8 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				quicksand: ['Quicksand', 'sans-serif'],
+				sans: ['var(--font-geist-sans)'],
+				mono: ['var(--font-geist-mono)'],
 			},
 			colors: {
 				mainDarkBG: '#0d0d0e',
@@ -19,6 +21,7 @@ module.exports = {
 				'200%': '200%',
 				'350%': '350%',
 				'500%': '500%',
+				'1000%' : '1000%',
 			},
 			screens: {
 				'2xl': '1440px',
@@ -29,11 +32,21 @@ module.exports = {
 			},
 			animation: {
 				gradient: 'gradient 15s linear infinite',
+				sgradient: 'gradient 30s linear infinite',
+				cursor: 'cursorblink 1.5s step-end infinite',
 			},
 			keyframes: {
 				gradient: {
 					from: { 'background-position': '0%' },
 					to: { 'background-position': '400%' },
+				},
+				cursorblink: {
+					'from, to': {
+					  opacity: 0
+					},
+					'50%': {
+					  opacity: 1
+					}
 				},
 			},
 			borderWidth: {
@@ -49,5 +62,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: ['prettier-plugin-tailwindcss'],
 };

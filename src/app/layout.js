@@ -5,7 +5,8 @@ import MobileNav from '@/components/MobileNav';
 import { Toaster } from 'react-hot-toast';
 import { Analytics } from '@vercel/analytics/react';
 import { Providers } from './providers';
-import ThemeButton from '@/components/ThemeButton';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 
 export const metadata = {
 	title: 'ElitLabs',
@@ -14,7 +15,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html
+			lang="en"
+			className={`${GeistSans.variable} ${GeistMono.variable} scroll-smooth`}
+			suppressHydrationWarning>
 			<head>
 				<meta name="description" content={metadata.description} />
 				<link
@@ -36,7 +40,7 @@ export default function RootLayout({ children }) {
 				/>
 				<link rel="manifest" href="/site.webmanifest" />
 			</head>
-			<body className="flex h-screen min-w-full max-w-full flex-col overflow-x-hidden bg-neutral-50 dark:bg-neutral-900 2xl:max-w-[90%]">
+			<body className="flex h-screen min-w-full max-w-full flex-col overflow-x-hidden scroll-smooth bg-neutral-50 font-sans dark:bg-neutral-950">
 				<Providers>
 					<Toaster />
 					<Navbar />
