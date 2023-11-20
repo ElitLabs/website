@@ -20,7 +20,7 @@ export default function Why() {
 				Why choose our courses?
 			</h1>
 			<section className="VHcenter flex flex-row gap-x-16">
-				<div className="flex w-full flex-col justify-between gap-x-16 gap-y-10 lg:max-w-[75%] md:flex-row xl:max-w-full">
+				<div className="flex w-full flex-col justify-between gap-x-16 gap-y-10 md:flex-row lg:max-w-[75%] xl:max-w-full">
 					<div className="flex flex-col gap-y-10 md:max-w-[45%] md:gap-y-20">
 						<Card
 							title="Skilled Teachers"

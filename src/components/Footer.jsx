@@ -11,7 +11,7 @@ import ThemeButton from './ThemeButton';
 export default function Footer() {
 	return (
 		<section className="VHcenter flex h-auto w-full rounded-t-lg border-t-2 border-gray-200 p-8 dark:border-gray-700 lg:p-6">
-			<footer className="mx-auto flex w-full flex-col gap-x-10 lg:max-w-[75%] sm:flex-row sm:justify-between 3xl:max-w-[60%]">
+			<footer className="mx-auto flex w-full flex-col gap-x-10 sm:flex-row sm:justify-between lg:max-w-[75%] 3xl:max-w-[60%]">
 				<div className="sm:VHcenter flex flex-col gap-x-10 sm:flex-row">
 					<div className="flex flex-row justify-between">
 						<Link className="text-4xl font-bold sm:text-3xl" href="/">

@@ -6,7 +6,7 @@ import ThemeButton from './ThemeButton';
 export default function Navbar() {
 	return (
 		<nav className="sticky top-0 z-10 hidden w-full justify-between border-b-[1.5px] border-neutral-300/50 bg-neutral-100/10 py-3 backdrop-blur-lg backdrop-filter dark:border-neutral-600/50 dark:bg-neutral-800/10 md:flex">
-			<div className="mx-auto flex h-10 items-center justify-between px-4 min-w-[90%] lg:min-w-[75%] 3xl:min-w-[60%]">
+			<div className="mx-auto flex h-10 min-w-[90%] items-center justify-between px-4 lg:min-w-[75%] 3xl:min-w-[60%]">
 				<Link
 					href="/"
 					passHref
