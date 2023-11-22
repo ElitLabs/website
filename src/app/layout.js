@@ -21,7 +21,7 @@ export const metadata = {
 		type: 'website',
 		images: [
 			{
-				url: '/elitlabsicon.svg',
+				url: '/elitlabsicon.png',
 				alt: 'ElitLabs',
 			},
 		],
@@ -31,7 +31,7 @@ export const metadata = {
 		site: '@elitlabsteam',
 		cardType: 'summary_large_image',
 	},
-	
+
 };
 
 export default function RootLayout({ children }) {
