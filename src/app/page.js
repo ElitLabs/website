@@ -16,6 +16,7 @@ export default function Home() {
 				<Popular />
 				<Why />
 			</section>
+			<p className="select-none text-[0px]">Elit Labs</p>
 		</main>
 	);
 }

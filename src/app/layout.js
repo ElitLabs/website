@@ -10,7 +10,20 @@ import { GeistMono } from 'geist/font/mono';
 
 export const metadata = {
 	title: 'ElitLabs',
-	description: 'ElitLabs',
+	description: 'ElitLabs is a platform to help aspiring developers from all backgrounds learn to code! We teach in ways that are intuitive, comprehensive, and engaging. We here at ElitLabs are big believers in learning by doing.',
+	openGraph: {
+		title: 'ElitLabs',
+		description:
+			'ElitLabs is a platform to help aspiring developers from all backgrounds learn to code! We teach in ways that are intuitive, comprehensive, and engaging. We here at ElitLabs are big believers in learning by doing.',
+		url: 'https://elitlabs.com',
+		type: 'website',
+		images: [
+			{
+				url: '/elitlabsicon.svg',
+				alt: 'ElitLabs',
+			},
+		],
+	},
 };
 
 export default function RootLayout({ children }) {

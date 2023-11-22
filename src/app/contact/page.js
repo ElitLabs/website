@@ -47,7 +47,7 @@ export default function Contact() {
 						</a>
 					</div>
 				</div>
-				<div className="row-start-1 flex flex-col justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-tl 3xl:bg-gradient-to-br from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950">
+				<div className="row-start-1 flex flex-col justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-tl from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 3xl:bg-gradient-to-br">
 					<h1 className="text-center text-3xl font-semibold">
 						Join our community!
 					</h1>
