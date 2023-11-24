@@ -11,14 +11,18 @@
     "format": "prettier --write ./src"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.1",
     "autoprefixer": "10.4.16",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
     "framer-motion": "^10.16.4",
+    "geist": "^1.1.0",
     "next": "13.5.2",
+    "next-themes": "^0.2.1",
     "postcss": "8.4.30",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",

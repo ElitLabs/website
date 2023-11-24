@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Home() {
 	return (
-		<main>
+		<main className="mx-auto max-w-[90%] xl:max-w-[75%] 3xl:max-w-[60%]">
 			<header>
 				<CallToAction />
 			</header>
@@ -16,6 +16,7 @@ export default function Home() {
 				<Popular />
 				<Why />
 			</section>
+			<p className="select-none text-[0px]">Elit Labs</p>
 		</main>
 	);
 }
