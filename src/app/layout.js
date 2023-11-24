@@ -31,7 +31,11 @@ export const metadata = {
 		site: '@elitlabsteam',
 		cardType: 'summary_large_image',
 	},
-
+	icons: {
+		appleIcon: '/images/apple-touch-icon.png',
+		favicon32: '/images/favicon-32x32.png',
+		favicon16: '/images/favicon-16x16.png',
+	}
 };
 
 export default function RootLayout({ children }) {
