@@ -1,5 +1,4 @@
 'use client';
-
 import ReactPlayer from 'react-player';
 import React from 'react';
 import VideoControls from '@/components/Video/VideoControls.jsx';
