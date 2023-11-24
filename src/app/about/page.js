@@ -1,5 +1,7 @@
+import ComingSoonPage from '@/components/ComingSoonPage';
+
 export const metadata = {
-	title: 'ElitLabs | About',
+	title: 'ElitLabs | Coming Soon',
 };
 
 export default function About() {

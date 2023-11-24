@@ -1,7 +1,7 @@
 import { SiDiscord, SiInstagram, SiTwitter } from 'react-icons/si';
 
 export const metadata = {
-	title: 'ElitLabs | Contact',
+	title: 'ElitLabs | Coming Soon',
 };
 
 export default function Contact() {

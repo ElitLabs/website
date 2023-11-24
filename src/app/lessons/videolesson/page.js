@@ -1,4 +1,4 @@
-'use client';
+import ComingSoonPage from '@/components/ComingSoonPage';
 
 import ReactPlayer from 'react-player';
 import React from 'react';
