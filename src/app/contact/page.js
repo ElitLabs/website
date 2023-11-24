@@ -33,7 +33,7 @@ export default function Contact() {
 						</a>
 					</div>
 				</div>
-				<div className="row-start-2 mx-auto grid w-full justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-b from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 lg:col-span-2 lg:w-[50%] 3xl:col-span-1 3xl:w-full">
+				<div className="row-start-2 3xl:row-start-1 mx-auto grid w-full justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-b from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 lg:col-span-2 lg:w-[50%] 3xl:col-span-1 3xl:w-full">
 					<h1 className="text-center text-3xl font-semibold">
 						For any questions or concerns, please email us at
 					</h1>
