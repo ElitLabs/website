@@ -6,7 +6,7 @@ import VideoControls from '@/components/Video/VideoControls.jsx';
 import Err404 from '@/app/not-found';
 
 export default function VideoLesson() {
-  return Err404;
+  return <Err404 />;
 }
 /*
 export default class VideoLesson extends React.Component {

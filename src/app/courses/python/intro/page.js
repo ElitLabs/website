@@ -6,7 +6,7 @@ import { PiBracketsCurlyBold } from 'react-icons/pi';
 import Err404 from '@/app/not-found';
 
 export default function ITP() {
-  return Err404;
+  return <Err404 />;
 }
 /*
 export const metadata = {
