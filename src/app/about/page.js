@@ -6,7 +6,7 @@ export const metadata = {
 export default function About() {
 	return (
 		<div className="mx-auto flex w-full flex-col items-center justify-center py-10 lg:max-w-[70%]">
-			<div className="flex flex-col items-center justify-center gap-y-[10vh] pt-4 lg:pt-[7.5vh] 3xl:pt-[12.5vh]">
+			<div className="flex flex-col items-center justify-center gap-y-[10vh] pt-4 lg:pt-[7.5vh] 3xl:pt-[10vh]">
 				<header className="flex w-full max-w-[90%] flex-col items-center justify-center lg:max-w-[70%]">
 					<h1 className="text-gradient animate-sgradient bg-gradient-to-l from-pink-600 via-purple-600 to-pink-600 bg-500% text-center font-mono text-[3rem] font-black uppercase tracking-wide dark:from-pink-500 dark:via-purple-500 dark:to-pink-500 lg:text-[3.125rem]">
 						Our Mission

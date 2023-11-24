@@ -12,7 +12,7 @@ export default function Contact() {
 			</h1>
 
 			<div className="flex max-w-[90%] grid-cols-2 flex-col gap-x-16 gap-y-10 lg:grid lg:max-w-[75%] 3xl:grid-cols-3 ">
-				<div className="grid grid-cols-1 justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-tr from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 3xl:bg-gradient-to-bl">
+				<div className="grid grid-cols-1 justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-tr from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 3xl:bg-gradient-to-bl 3xl:col-start-1">
 					<h1 className="text-center text-3xl font-semibold">
 						Want to stay up to date with ElitLabs?
 					</h1>
@@ -33,7 +33,7 @@ export default function Contact() {
 						</a>
 					</div>
 				</div>
-				<div className="row-start-2 3xl:row-start-1 mx-auto grid w-full justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-b from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 lg:col-span-2 lg:w-[50%] 3xl:col-span-1 3xl:w-full">
+				<div className="row-start-2 3xl:row-start-1 mx-auto grid w-full justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-b from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 lg:col-span-2 lg:w-[50%] 3xl:col-span-1 3xl:w-full 3xl:col-start-2">
 					<h1 className="text-center text-3xl font-semibold">
 						For any questions or concerns, please email us at
 					</h1>
@@ -47,7 +47,7 @@ export default function Contact() {
 						</a>
 					</div>
 				</div>
-				<div className="row-start-1 flex flex-col justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-tl from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 3xl:bg-gradient-to-br">
+				<div className="row-start-1 flex flex-col justify-between gap-y-4 rounded-md border-1 border-neutral-950 bg-gradient-to-tl from-neutral-100 via-neutral-50 to-neutral-50 p-6 dark:dark:border-neutral-600 dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-950 3xl:col-start-3 3xl:bg-gradient-to-br">
 					<h1 className="text-center text-3xl font-semibold">
 						Join our community!
 					</h1>
