@@ -3,7 +3,12 @@ import ITPImg from '@/assets/courses/python/intro/noJoin.svg';
 import { VscSourceControl } from 'react-icons/vsc';
 import { FaBrain, FaShapes } from 'react-icons/fa';
 import { PiBracketsCurlyBold } from 'react-icons/pi';
+import Err404 from '@/app/not-found';
 
+export default function ITP() {
+  return Err404;
+}
+/*
 export const metadata = {
 	title: 'ElitLabs | Introduction to Python',
 };
@@ -39,3 +44,4 @@ export default function ITP() {
 		/>
 	);
 }
+*/
