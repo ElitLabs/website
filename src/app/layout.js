@@ -21,7 +21,7 @@ export const metadata = {
 		type: 'website',
 		images: [
 			{
-				url: '/elitlabsicon.png',
+				url: '/images/elitlabsicon.png',
 				alt: 'ElitLabs',
 			},
 		],
@@ -31,11 +31,6 @@ export const metadata = {
 		site: '@elitlabsteam',
 		cardType: 'summary_large_image',
 	},
-	icons: {
-		appleIcon: '/images/apple-touch-icon.png',
-		favicon32: '/images/favicon-32x32.png',
-		favicon16: '/images/favicon-16x16.png',
-	}
 };
 
 export default function RootLayout({ children }) {
@@ -45,7 +40,7 @@ export default function RootLayout({ children }) {
 			className={`${GeistSans.variable} ${GeistMono.variable} scroll-smooth`}
 			suppressHydrationWarning>
 			<head>
-				{/* <link
+				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
 					href="/images/apple-touch-icon.png"
@@ -62,7 +57,7 @@ export default function RootLayout({ children }) {
 					sizes="16x16"
 					href="/images/favicon-16x16.png"
 				/>
-				<link rel="manifest" href="/site.webmanifest" /> */}
+				<link rel="manifest" href="/site.webmanifest" />
 			</head>
 			<body className="flex h-screen min-w-full max-w-full flex-col overflow-x-hidden scroll-smooth bg-neutral-50 font-sans dark:bg-neutral-950">
 				<Providers>
