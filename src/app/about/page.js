@@ -1,3 +1,5 @@
+import ComingSoonPage from '@/components/ComingSoonPage';
+
 export const metadata = {
 	title: 'ElitLabs | About',
 };
