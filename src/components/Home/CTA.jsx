@@ -1,5 +1,5 @@
 'use client';
-import laptop from '@/assets/laptop.png';
+import laptop from '@/assets/laptop.webp';
 import toast from 'react-hot-toast';
 import Image from 'next/image';
 
