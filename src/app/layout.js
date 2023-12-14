@@ -8,10 +8,10 @@ import { Providers } from './providers';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
-
 export const metadata = {
 	title: 'ElitLabs',
-	description: 'ElitLabs is a platform to help aspiring developers from all backgrounds learn to code! We teach in ways that are intuitive, comprehensive, and engaging. We here at ElitLabs are big believers in learning by doing.',
+	description:
+		'ElitLabs is a platform to help aspiring developers from all backgrounds learn to code! We teach in ways that are intuitive, comprehensive, and engaging. We here at ElitLabs are big believers in learning by doing.',
 	manifest: '/site.webmanifest',
 	openGraph: {
 		title: 'ElitLabs',
