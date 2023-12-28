@@ -1,7 +1,5 @@
 'use client';
-import ReactPlayer from 'react-player';
 import React from 'react';
-import VideoControls from '@/components/Video/VideoControls.jsx';
 import Err404 from '@/app/not-found';
 
 export default function VideoLesson() {

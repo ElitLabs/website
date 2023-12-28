@@ -22,11 +22,11 @@ export default function CallToAction() {
 					teaching people in ways that are intuitive, realistic, and fun.
 				</span>
 				<div className="mx-auto flex w-full max-w-[80%] flex-col md:flex-row justify-between text-center text-2xl font-semibold text-neutral-50 lg:mx-0 lg:max-w-full gap-y-4">
-					<button
-						onClick={() => toast.error('Coming Soon!')}
+					<Link
+						href={'/student-signup'}
 						className="mx-auto w-[75%] md:w-[47.5%] xl:w-[45%] self-center rounded-xl bg-gradient-to-r from-violet-500 via-blue-500 to-violet-500 bg-200% p-4 transition duration-500 ease-in-out hover:scale-105 hover:animate-gradient sm:mx-0 lg:self-start">
 						Join Now!
-					</button>
+					</Link>
 					<Link
 						href={'/tutor-application'}
 						className="mx-auto w-[75%] md:w-[47.5%] xl:w-[45%] self-center rounded-xl bg-gradient-to-r from-violet-500 via-blue-500 to-violet-500 lg:from-blue-500 lg:via-violet-500 lg:to-blue-500 bg-200% p-4 transition duration-500 ease-in-out hover:scale-105 hover:animate-gradient sm:mx-0 lg:self-start">
