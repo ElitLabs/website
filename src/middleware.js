@@ -16,7 +16,6 @@ export default async function middleware(req) {
     && url.pathname != "/privacy"
   ) 
   {
-    console.log(url.pathname)
     url.pathname = `/${subdomain}${url.pathname}`;
   }
 

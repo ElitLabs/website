@@ -10,7 +10,7 @@ export default function MobileNav() {
 
 	function redirect() {
 		if (typeof window !== "undefined") {
-			window.location.host = window.location.host.split(".")[1]
+			window.location.host = window.location.host = window.location.host.replace("biotech.", "")
 		}
 	}
 
