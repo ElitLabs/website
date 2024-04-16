@@ -29,7 +29,7 @@ const getValidSubdomain = (host) => {
   }
   if (host && host.includes('.')) {
     const candidate = host.split('.')[0];
-    if (candidate && !candidate.includes('localhost')) {
+    if (candidate && !candidate.includes('localhost') && candidate != "dev") {
       subdomain = candidate;
     }
   }
