@@ -7,7 +7,7 @@ export default function Navbar() {
 
 	function redirect() {
 		if (typeof window !== "undefined") {
-			window.location.host = window.location.host.replace("biotech.", "")
+			window.location.href = window.location.protocol + "//" + window.location.href.replace("biotech.", "").split("/")[2];
 		}
 	}
 
@@ -22,12 +22,12 @@ export default function Navbar() {
 				</Link>
 				<div className="flex items-center justify-center space-x-8 text-2xl font-semibold">
 					<ThemeButton />
-					<Link
+					<button
 						className="transition-all duration-300 hover:text-neutral-700 hover:dark:text-brand/90"
 						onClick={() => redirect()}
 						href="/">	
 						Home
-					</Link>
+					</button>
 					<Link
 						className="transition-all duration-300 hover:text-neutral-700 hover:dark:text-neutral-200"
 						href="/about">

@@ -1,9 +1,5 @@
 import Link from 'next/link';
 
-export const metadata = {
-	title: 'ElitLabs | 404',
-};
-
 export default function Err404() {
 	return (
 		<main>
