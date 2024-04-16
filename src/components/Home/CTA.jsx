@@ -3,10 +3,11 @@ import laptop from '@/assets/laptop.webp';
 import toast from 'react-hot-toast';
 import Image from 'next/image';
 import Link from 'next/link';
+import BiotechCTA from '@/components/Home/BiotechCTA';
 
 export default function CallToAction() {
 	return (
-		<section className="mx-auto flex flex-row items-center gap-x-10 py-[2.5vh] md:grid lg:grid-cols-[55%,45%] lg:pt-24 xl:gap-x-4 xl:pb-[1vh] xl:pt-[5vh]">
+		<section className="mx-auto flex flex-row items-center gap-x-20 py-[2.5vh] md:grid lg:grid-cols-[55%,45%] lg:pt-24 xl:gap-x-15 xl:pb-[1vh] xl:pt-[13vh]">
 			<span className="flex flex-col gap-y-2">
 				<span className="pb-2 text-center text-[3.35rem] font-bold leading-[4.5rem] lg:text-left 3xl:text-[3.75rem]">
 					Rethinking the Way People Learn to{' '}
@@ -33,6 +34,7 @@ export default function CallToAction() {
 						Tutor Application
 					</Link>
 				</div>
+				<BiotechCTA />
 			</span>
 			<Image
 				src={laptop}

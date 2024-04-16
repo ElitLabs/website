@@ -1,10 +1,10 @@
-import './globals.css';
+import '../globals.css';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import MobileNav from '@/components/MobileNav';
 import { Toaster } from 'react-hot-toast';
 import { Analytics } from '@vercel/analytics/react';
-import { Providers } from './providers';
+import { Providers } from '../providers';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 

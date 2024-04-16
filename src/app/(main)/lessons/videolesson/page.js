@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import Err404 from '@/app/not-found';
+import Err404 from '@/app/(main)/[...not-found]/page';
 
 export default function VideoLesson() {
   return <Err404 />;
