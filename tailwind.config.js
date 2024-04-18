@@ -13,6 +13,7 @@ module.exports = {
 				mainDarkBG: '#0d0d0e',
 				mainLightBG: '#f5f5f5',
 				brand: '#E7183F',
+				bioBrand: '#18e77c',
 			},
 			fontSize: {
 				'8.5xl': '7rem',
