@@ -24,7 +24,7 @@ export default function Biotech() {
 							<br/><br/>
 							Our goal is to empower students with knowledge and confidence, 
 							fostering a deeper understanding of the world around them. 
-							Whether you're a beginner or advanced learner, anyone is welcome to join us and learn.
+							Whether you&apos;re a beginner or advanced learner, anyone is welcome to join us and learn.
 							<br/><br/>
 							Welcome to ElitLabs Biotech, where a passion for science ignites learning!
 						</p>
