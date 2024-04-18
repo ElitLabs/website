@@ -31,7 +31,7 @@ export default function About() {
 				</div>
 				<div className="mx-auto flex w-[25%] max-w-[25%] justify-between text-center text-2xl font-semibold text-neutral-50 lg:mx-0 lg:max-w-full mt-[2vh]">
 					<Link
-						href={'../student-signup'}
+						href={'/biotech/student-signup'}
 						className="mx-auto w-full self-center rounded-xl bg-gradient-to-r from-green-500 via-blue-500 to-blue-500 bg-200% p-4 transition duration-500 ease-in-out hover:scale-105 hover:animate-gradient sm:mx-0 lg:self-start">
 						Join Now!
 					</Link>

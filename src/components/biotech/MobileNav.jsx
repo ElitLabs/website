@@ -7,13 +7,6 @@ import { FiPlus } from 'react-icons/fi';
 import toast from 'react-hot-toast';
 
 export default function MobileNav() {
-
-	function redirect() {
-		if (typeof window !== "undefined") {
-			window.location.href = window.location.protocol + "//" + window.location.href.replace("biotech.", "").split("/")[2];
-		}
-	}
-
 	const [isOpen, setIsOpen] = useState(false);
 
 	const MotionLink = motion(Link);
@@ -64,7 +57,7 @@ export default function MobileNav() {
 			<header className="sticky top-0 z-50 flex w-full flex-row items-center justify-between border-b-2 border-neutral-300/20 bg-white bg-opacity-10 px-[5%] py-[0.5rem] backdrop-blur-lg backdrop-filter dark:bg-neutral-950/10 md:hidden">
 				<Link
 					className="font-quicksand text-[2.125rem] font-semibold text-bioBrand/90"
-					href="/">
+					href="/biotech">
 					ElitLabs Biotech
 				</Link>
 				<motion.div
@@ -85,11 +78,11 @@ export default function MobileNav() {
 					<MotionLink
 						href="/"
 						variants={linkVariants}
-						onClick={() => {redirect(); toggleNav()}}>
+						onClick={() => toggleNav()}>
 						Home
 					</MotionLink>
 					<MotionLink
-						href="/about"
+						href="/biotech/about"
 						variants={linkVariants}
 						onClick={() => toggleNav()}>
 						About
