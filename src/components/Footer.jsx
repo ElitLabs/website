@@ -15,7 +15,7 @@ export default function Footer() {
 				<div className="sm:VHcenter flex flex-col gap-x-10 sm:flex-row">
 					<div className="flex flex-row justify-between">
 						<Link className="text-4xl font-bold sm:text-3xl" href="/">
-							2023 ElitLabs
+							2024 ElitLabs
 						</Link>{' '}
 						<div className="flex flex-col items-center sm:hidden">
 							<h1 className="pb-2 text-2xl font-semibold">Theme</h1>
