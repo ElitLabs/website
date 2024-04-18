@@ -16,17 +16,21 @@ export default function CallToAction() {
 						<span className="text-gradient animate-gradient bg-gradient-to-r from-green-600 via-purple-600 to-green-600 bg-350% font-black dark:from-green-500 dark:via-purple-500 dark:to-green-500">
 							Biotechnology
 						</span>
-						{/* <span className="animate-cursor -ml-2 font-light">|</span> */}
 					</code>
 				</span>
 				<span className="pb-3 text-center text-2xl font-semibold text-neutral-500 dark:text-neutral-300 lg:text-left xl:pb-4 3xl:pb-5">
-					We are offering beginner level courses for middle and high school students to learn the basics of biotech. Explore the interdisciplinary field that combines biology and engineering!
+					We are offering beginner level courses for middle school students to learn the basics of biotech. Explore the interdisciplinary field that combines biology and engineering!
 				</span>
 				<div className="mx-auto flex w-full max-w-[80%] flex-col md:flex-row justify-between text-center text-2xl font-semibold text-neutral-50 lg:mx-0 lg:max-w-full gap-y-4">
 					<Link
 						href={'/student-signup'}
 						className="mx-auto w-[75%] md:w-[47.5%] xl:w-[45%] self-center rounded-xl bg-gradient-to-r from-green-500 via-blue-500 to-blue-500 bg-200% p-4 transition duration-500 ease-in-out hover:scale-105 hover:animate-gradient sm:mx-0 lg:self-start">
 						Join Now!
+					</Link>
+					<Link
+						href={'/about'}
+						className="mx-auto w-[75%] md:w-[47.5%] xl:w-[45%] self-center rounded-xl bg-gradient-to-r from-green-500 via-blue-500 to-blue-500 bg-200% p-4 transition duration-500 ease-in-out hover:scale-105 hover:animate-gradient sm:mx-0 lg:self-start">
+						Learn more
 					</Link>
 				</div>
 			</span>
