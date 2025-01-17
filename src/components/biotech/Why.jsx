@@ -19,7 +19,7 @@ export default function Why() {
 				Why choose our courses?
 			</h1>
 			<section>
-				<div className="flex flex-row gap-x-10 max-h-[45%] grid-cols-[50%,50%]">
+				<div className="flex mx-[5%] flex-row gap-x-5 lg:gap-x-10 max-h-[45%] grid-cols-[50%,50%]">
 					<Card
 						title="Skilled Teachers"
 						text="Our courses are led by a team of highly skilled instructors who are not only experts in biotech but also passionate about teaching. They bring a lot of experience to the table, ensuring that you receive the best education and guidance throughout your learning journey."

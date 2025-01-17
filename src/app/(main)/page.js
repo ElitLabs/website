@@ -13,7 +13,6 @@ export default function Home() {
 				<CallToAction />
 			</header>
 			<section className="flex flex-col items-center">
-				<Popular />
 				<Why />
 			</section>
 			<p className="select-none text-[0px]">Elit Labs</p>

@@ -15,7 +15,7 @@ function Card({ title, text, icon }) {
 }
 export default function Why() {
 	return (
-		<section className="flex h-max flex-col gap-y-11 py-10 pb-12 xl:w-[105%] 3xl:w-full">
+		<section className="flex h-max flex-col gap-y-11 py-10 pt-48 pb-12 xl:w-[105%] 3xl:w-full">
 			<h1 className="VHcenter flex text-center text-[2.5rem] font-bold leading-[1] 2xl:text-5xl 4xl:text-6xl">
 				Why choose our courses?
 			</h1>
